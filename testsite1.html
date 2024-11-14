@@ -15,9 +15,7 @@
   <body>
     <div id="main">
       <header id="header">
-        <!-- Image Layers -->
         <div class="image-container" id="imageContainer">
-          <!-- Original Images -->
           <div
             class="bg-image"
             style="background-image: url('/images/dog1.JPG')"
@@ -37,6 +35,10 @@
           <div
             class="bg-image"
             style="background-image: url('/images/dog5.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog6.JPG')"
           ></div>
           <div
             class="bg-image"
@@ -80,7 +82,6 @@
           ></div>
         </div>
 
-        <!-- Content -->
         <h1>Magical Coco Coats</h1>
         <nav>
           <button onclick="scrollToSection('about')">About</button>
@@ -93,7 +94,7 @@
 
       <section id="about">
         <h2>About Our Coats</h2>
-        <p>
+        <p class="about-p">
           I make custom pet clothes for a perfect and comfortable fit. So your
           dog is 😀 & warm! I understand what it's like to have a dog with
           unique body dimensions. If you give me measurements I can make
@@ -109,11 +110,37 @@
 
       <section id="testimonials">
         <h2>Testimonials</h2>
-        <p>
+        <img
+          class="testimonials-img"
+          src="images\testimonialdog1.jpg"
+          alt="Image of
+        Pablo the dog with his custom sweater"
+        />
+        <p class="testimonials-p">
           "Pablo loves his hunting vest! It fits perfectly and the fleece lining
           is smooth and soft. He prances when we put it on him. He also has a
           lighter weight fleece coat for cool days. It is so easy to slip over
           his head and velcro around his underside."
+        </p>
+        <p class="testimonials-p">
+          "My dog Zora absolutely loves her sweaters, they are custom sized and
+          fit her perfectly. They keep her warm and cozy in the cold weather and
+          are very stylish. I get tons of compliments from people who see Zora
+          in her sweaters while we are walking. I only get her sweaters from
+          here, because the quality is outstanding!"
+        </p>
+        <p class="testimonials-p">
+          "These dog coats are beautiful! 🤩 They are hand made with such
+          beautiful craftsmanship and quality! I love them and my dogs
+          appreciate the fact that they even thought of the sleeves being made
+          with the dewy claws in mind so that they can easily slip into each
+          sleeve without having to worry about them getting caught! Thank you 🙏
+          so much for the beautiful work and design of them! 🙏🥰🙏🥰"
+        </p>
+        <p class="testimonials-p">
+          "Just wanted to say that the costumes you made was so creative and fit
+          perfectly. Thank you for creating such a giggle for us! Also, chai
+          loves his new sweater! "
         </p>
       </section>
 
@@ -124,25 +151,23 @@
     </div>
 
     <script>
-      // Function to duplicate images for infinite scrolling
-      window.onload = function () {
-        const imageContainer = document.getElementById("imageContainer");
-        const images = Array.from(imageContainer.children);
-        images.forEach((image) => {
-          const clone = image.cloneNode(true);
-          imageContainer.appendChild(clone);
-        });
+      // window.onload = function () {
+      //   const imageContainer = document.getElementById("imageContainer");
+      //   const images = Array.from(imageContainer.children);
+      //   images.forEach((image) => {
+      //     const clone = image.cloneNode(true);
+      //     imageContainer.appendChild(clone);
+      //   });
 
-        let scrollSpeed = 1; // Adjust this for faster/slower scroll
-        function scrollImages() {
-          imageContainer.scrollLeft += scrollSpeed;
-          if (imageContainer.scrollLeft >= imageContainer.scrollWidth / 2) {
-            imageContainer.scrollLeft = 0;
-          }
-          requestAnimationFrame(scrollImages);
+      let scrollSpeed = 1;
+      function scrollImages() {
+        imageContainer.scrollLeft += scrollSpeed;
+        if (imageContainer.scrollLeft >= imageContainer.scrollWidth / 2) {
+          imageContainer.scrollLeft = 0;
         }
-        scrollImages();
-      };
+        requestAnimationFrame(scrollImages);
+      }
+      scrollImages();
 
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
