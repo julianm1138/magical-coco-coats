@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magical Coco Coats</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+  </head>
+  <body class="is-preload">
+    <div id="bg"></div>
+
+    <div id="main">
+      <!-- Header -->
+      <header id="header">
+        <h1>Magical Coco Coats</h1>
+        <nav>
+          <!-- Pass the corresponding section id to the scrollToSection function -->
+          <button onclick="scrollToSection('about')">About</button>
+          <button onclick="scrollToSection('testimonials')">
+            Testimonials
+          </button>
+          <button onclick="scrollToSection('shop')">Order</button>
+        </nav>
+      </header>
+
+      <section id="about">
+        <h2 class="section-header">Hi, I'm Mary</h2>
+        <p class="about-p">
+          I make custom pet clothes for a perfect and comfortable fit. So your
+          dog is 😀 & warm! I understand what it's like to have a dog with
+          unique body dimensions. If you give me measurements I can make
+          perfectly tailored clothes for your dog. I up-cycle clothes and I have
+          many different colors and different prints of fabric. I hand stitch
+          the cuffs, with an invisible seam. So when you put my coat on your dog
+          their nails will not get caught on thread from the seams. I believe in
+          up cycling to help the environment so I make dog coats from old
+          clothes. I even use notions from old purses, buttons, D-ring clips,
+          zippers, & ribbons. Each outfit is uniquely designed.
+        </p>
+      </section>
+
+      <section id="testimonials">
+        <img
+          class="testimonal-img-1"
+          src="/assets/css/images/testimonialdog1.jpg"
+          alt="Pablo, the dog wearing his custom sweater"
+        />
+        <p class="testimonal-p">
+          "Pablo loves his hunting vest! It fits perfectly and the fleece lining
+          is smooth and soft. He prances when we put it on him. He also has a
+          lighter weight fleece coat for cool days. It is so easy to slip over
+          his head and velcro around his underside."
+        </p>
+      </section>
+
+      <section id="shop"></section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <span class="copyright">
+          &copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+        </span>
+      </footer>
+    </div>
+
+    <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+      };
+
+      window.ontouchmove = function () {
+        return false;
+      };
+
+      window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+      };
+
+      // Scroll to the section based on the passed id
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
