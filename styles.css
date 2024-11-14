@@ -1,0 +1,252 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Full viewport height for each section */
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#main {
+  text-align: center;
+  color: #333;
+}
+
+/* Header styling */
+#header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #1c96c5;
+}
+
+#header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 10px;
+  margin: 0 22px 0 22px;
+}
+
+/* Image Layer Styling (Tight Collage with Infinite Loop) */
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Double width to hold duplicated images for seamless loop */
+  height: 100%;
+  display: flex;
+  animation: scrollBackground 40s linear infinite; /* Infinite, seamless scroll */
+}
+
+.bg-image {
+  position: relative;
+  width: 14em;
+  height: 10em;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.bg-image:nth-child(odd) {
+  top: 2%;
+}
+
+/* Even nth-child images (top: 74%) */
+.bg-image:nth-child(even) {
+  top: 71%;
+}
+/* Position images with tighter spacing */
+.bg-image:nth-child(1) {
+  left: 0%;
+}
+.bg-image:nth-child(2) {
+  left: 7%;
+}
+.bg-image:nth-child(3) {
+  left: 14%;
+}
+.bg-image:nth-child(4) {
+  left: 21%;
+}
+.bg-image:nth-child(5) {
+  left: 28%;
+}
+.bg-image:nth-child(6) {
+  left: 35%;
+}
+.bg-image:nth-child(7) {
+  left: 42%;
+}
+.bg-image:nth-child(8) {
+  left: 49%;
+}
+.bg-image:nth-child(9) {
+  left: 56%;
+}
+.bg-image:nth-child(10) {
+  left: 63%;
+}
+.bg-image:nth-child(11) {
+  left: 70%;
+}
+.bg-image:nth-child(12) {
+  left: 77%;
+}
+.bg-image:nth-child(13) {
+  left: 84%;
+}
+.bg-image:nth-child(14) {
+  left: 91%;
+}
+.bg-image:nth-child(15) {
+  left: 98%;
+}
+
+/* Duplicate the images for smooth scrolling */
+.bg-image:nth-child(16) {
+  left: 105%;
+}
+.bg-image:nth-child(17) {
+  left: 112%;
+}
+.bg-image:nth-child(18) {
+  left: 119%;
+}
+.bg-image:nth-child(19) {
+  left: 126%;
+}
+.bg-image:nth-child(20) {
+  left: 133%;
+}
+
+/* Infinite scrolling animation */
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move left by half to complete the loop */
+  }
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #62c1e5;
+  color: #cfecf7;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  width: 94%;
+  z-index: 5;
+}
+
+button:hover {
+  background-color: #3b9eff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.5);
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+#about,
+#testimonials,
+#shop {
+  background-color: #f9f9f9;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full viewport height for each section */
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+#main {
+  text-align: center;
+  color: #333;
+}
+
+/* Header styling */
+#header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #1c96c5;
+}
+
+#header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+}
+
+/* Image Layer Styling */
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: max-content;
+  height: 100%;
+}
+
+.bg-image {
+  width: 14em;
+  height: 12em;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  border-radius: 45%;
+  margin-right: -185px; /* For almost-touching effect */
+}

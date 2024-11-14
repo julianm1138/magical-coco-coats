@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Dog and Sweater Collage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <!-- Image Layers -->
+        <div class="image-container" id="imageContainer">
+          <!-- Original Images -->
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog1.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog2.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog3.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog4.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog5.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater1.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater2.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater3.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater4.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater5.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater6.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater7.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater8.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater9.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater10.JPG')"
+          ></div>
+        </div>
+
+        <!-- Content -->
+        <h1>Magical Coco Coats</h1>
+        <nav>
+          <button onclick="scrollToSection('about')">About</button>
+          <button onclick="scrollToSection('testimonials')">
+            Testimonials
+          </button>
+          <button onclick="scrollToSection('shop')">Order</button>
+        </nav>
+      </header>
+
+      <section id="about">
+        <h2>About Our Coats</h2>
+        <p>I make custom pet clothes for a perfect and comfortable fit...</p>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>See what others have to say...</p>
+      </section>
+
+      <section id="shop">
+        <h2>Order Your Custom Coat</h2>
+        <p>Discover the comfort and style your pet deserves...</p>
+      </section>
+    </div>
+
+    <script>
+      // Function to duplicate images for infinite scrolling
+      window.onload = function () {
+        const imageContainer = document.getElementById("imageContainer");
+        const images = Array.from(imageContainer.children);
+        images.forEach((image) => {
+          const clone = image.cloneNode(true);
+          imageContainer.appendChild(clone);
+        });
+
+        let scrollSpeed = 1; // Adjust this for faster/slower scroll
+        function scrollImages() {
+          imageContainer.scrollLeft += scrollSpeed;
+          if (imageContainer.scrollLeft >= imageContainer.scrollWidth / 2) {
+            imageContainer.scrollLeft = 0;
+          }
+          requestAnimationFrame(scrollImages);
+        }
+        scrollImages();
+      };
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
