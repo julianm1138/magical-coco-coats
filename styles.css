@@ -39,14 +39,31 @@ html {
 }
 
 .testimonials-p {
-  margin: 61px 22px 128px 22px;
+  margin: 50px 22px 48px 22px;
   font-style: italic;
 }
-.about-p {
-  margin: 0 15px 0 15px;
+#testimonials-img1 {
+  height: 19em;
+  width: 21em;
+  margin-bottom: -9px;
+  margin-top: 27px;
+}
+#testimonials-img2 {
+  height: 27em;
+  width: 20em;
+  margin-top: 64px;
 }
 
-/* Image Layer Styling (Tight Collage with Infinite Loop) */
+#testimonials-img3 {
+  height: 27em;
+  width: 16em;
+  margin: 41px;
+}
+.about-p {
+  line-height: 31px;
+  margin: 7px;
+}
+
 .image-container {
   position: absolute;
   top: 0;
@@ -54,7 +71,7 @@ html {
   width: 200%;
   height: 100%;
   display: flex;
-  animation: scrollBackground 40s linear infinite;
+  animation: scrollBackground 14s linear infinite;
 }
 
 .bg-image {
@@ -67,16 +84,23 @@ html {
   flex-shrink: 0;
   border-radius: 50%;
 }
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20%); /* Adjust to scroll entire image set */
+  }
+}
 
 .bg-image:nth-child(odd) {
   top: 2%;
 }
 
-/* Even nth-child images (top: 74%) */
 .bg-image:nth-child(even) {
-  top: 71%;
+  top: 70%;
 }
-/* Position images with tighter spacing */
+
 .bg-image:nth-child(1) {
   left: 0%;
 }
@@ -138,16 +162,6 @@ html {
 }
 .bg-image:nth-child(20) {
   left: 133%;
-}
-
-/* Infinite scrolling animation */
-@keyframes scrollBackground {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 nav {
@@ -233,13 +247,12 @@ html {
   font-size: 32px;
 }
 
-.image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+#imageContainer {
   display: flex;
-  width: max-content;
-  height: 100%;
+
+  white-space: nowrap;
+
+  height: 100vh; /* Adjust to match your layout */
 }
 
 .bg-image {
@@ -249,11 +262,73 @@ html {
   background-position: center;
   will-change: transform;
   border-radius: 45%;
-  margin-right: -167px;
+  margin-right: -151px;
 }
 
 .testimonials-img {
   margin-top: 42px;
-  width: 21em;
-  height: 17em;
+  width: 17em;
+  height: 15em;
+}
+
+#about {
+  background-color: #f8f8f8;
+}
+
+#testimonials {
+  background-color: white;
+  padding: 0;
+}
+.testimonial-container {
+  margin-top: 37px;
+}
+
+#order {
+  background-color: #f8f8f8;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#testimonial-p-2 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .about-p {
+    line-height: 54px;
+    margin: 7px;
+    max-width: 77%;
+    margin: auto;
+    padding: 23px;
+    font-size: 2em;
+  }
+
+  .testimonials-p {
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    font-size: 2em;
+    font-style: italic;
+    max-width: 69%;
+    line-height: 46px;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #testimonials-img2 {
+    height: 15em;
+    width: 12em;
+    margin-top: 8em;
+  }
+  #testimonials-img3 {
+    height: 13em;
+    width: 8em;
+    margin: 41px;
+  }
 }

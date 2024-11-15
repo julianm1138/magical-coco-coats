@@ -15,6 +15,7 @@
   <body>
     <div id="main">
       <header id="header">
+        
         <div class="image-container" id="imageContainer">
           <div
             class="bg-image"
@@ -80,6 +81,10 @@
             class="bg-image"
             style="background-image: url('/images/sweater10.JPG')"
           ></div>
+
+          <div class="bg-image" style="background-image: url('/images/dog1.JPG')"></div>
+          <div class="bg-image" style="background-image: url('/images/dog2.JPG')"></div>
+          <div class="bg-image" style="background-image: url('/images/dog3.JPG')"></div>
         </div>
 
         <h1>Magical Coco Coats</h1>
@@ -107,11 +112,11 @@
           zippers, & ribbons. Each outfit is uniquely designed.
         </p>
       </section>
-
+<div class="testimonial-container">
       <section id="testimonials">
         <h2>Testimonials</h2>
         <img
-          class="testimonials-img"
+          id="testimonials-img1"
           src="images\testimonialdog1.jpg"
           alt="Image of
         Pablo the dog with his custom sweater"
@@ -122,12 +127,19 @@
           lighter weight fleece coat for cool days. It is so easy to slip over
           his head and velcro around his underside."
         </p>
-        <p class="testimonials-p">
+      </div>
+        <p id="testimonial-p-2" class="testimonials-p">
           "My dog Zora absolutely loves her sweaters, they are custom sized and
           fit her perfectly. They keep her warm and cozy in the cold weather and
           are very stylish. I get tons of compliments from people who see Zora
           in her sweaters while we are walking. I only get her sweaters from
-          here, because the quality is outstanding!"
+          here, because the quality is outstanding!" - Stephanie
+          <img
+            id="testimonials-img2"
+            src="images\testimonialdog2.jpg"
+            alt="Image of
+        two dogs wearing custom cheetah-design sweaters"
+          />
         </p>
         <p class="testimonials-p">
           "These dog coats are beautiful! 🤩 They are hand made with such
@@ -135,12 +147,18 @@
           appreciate the fact that they even thought of the sleeves being made
           with the dewy claws in mind so that they can easily slip into each
           sleeve without having to worry about them getting caught! Thank you 🙏
-          so much for the beautiful work and design of them! 🙏🥰🙏🥰"
+          so much for the beautiful work and design of them! 🙏🥰🙏🥰" - Robyn
         </p>
         <p class="testimonials-p">
+          <img
+            id="testimonials-img3"
+            src="images\testimonialdog3.jpg"
+            alt="Image of
+        Chai the dog with his custom sweater"
+          />
           "Just wanted to say that the costumes you made was so creative and fit
-          perfectly. Thank you for creating such a giggle for us! Also, chai
-          loves his new sweater! "
+          perfectly. Thank you for creating such a giggle for us! Also, Chai
+          loves his new sweater!" - Illya
         </p>
       </section>
 
@@ -151,23 +169,9 @@
     </div>
 
     <script>
-      // window.onload = function () {
-      //   const imageContainer = document.getElementById("imageContainer");
-      //   const images = Array.from(imageContainer.children);
-      //   images.forEach((image) => {
-      //     const clone = image.cloneNode(true);
-      //     imageContainer.appendChild(clone);
-      //   });
-
-      let scrollSpeed = 1;
-      function scrollImages() {
-        imageContainer.scrollLeft += scrollSpeed;
-        if (imageContainer.scrollLeft >= imageContainer.scrollWidth / 2) {
-          imageContainer.scrollLeft = 0;
-        }
-        requestAnimationFrame(scrollImages);
-      }
-      scrollImages();
+   
+  
+  
 
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
