@@ -11,6 +11,7 @@ body,
 html {
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #main {
@@ -43,8 +44,8 @@ html {
   font-style: italic;
 }
 #testimonials-img1 {
-  height: 19em;
-  width: 21em;
+  height: 22em;
+  width: 29em;
   margin-bottom: -9px;
   margin-top: 27px;
 }
@@ -201,7 +202,7 @@ button:focus {
 
 /* Section Styling */
 section {
-  padding: 50px 20px;
+  padding: 28px 20px;
   min-height: 100vh;
 }
 
@@ -211,48 +212,10 @@ section {
   background-color: #f9f9f9;
 }
 
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-#main {
-  text-align: center;
-  color: #333;
-}
-
-#header {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-color: #1c96c5;
-}
-
 #header h1 {
   position: relative;
   z-index: 1;
   font-size: 32px;
-}
-
-#imageContainer {
-  display: flex;
-
-  white-space: nowrap;
-
-  height: 100vh; /* Adjust to match your layout */
 }
 
 .bg-image {
@@ -271,6 +234,10 @@ html {
   height: 15em;
 }
 
+#third-p {
+  margin-top: -2em;
+}
+
 #about {
   background-color: #f8f8f8;
 }
@@ -280,7 +247,7 @@ html {
   padding: 0;
 }
 .testimonial-container {
-  margin-top: 37px;
+  margin-top: 12px;
 }
 
 #order {
@@ -295,24 +262,23 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 330px) {
   .about-p {
-    line-height: 54px;
-    margin: 7px;
-    max-width: 77%;
+    line-height: 25px;
     margin: auto;
-    padding: 23px;
-    font-size: 2em;
+    max-width: 90%;
+    font-size: 17px;
+    margin-top: 1em;
   }
 
   .testimonials-p {
     margin: auto;
     padding-top: 2em;
     padding-bottom: 7em;
-    font-size: 2em;
+    font-size: 20px;
     font-style: italic;
-    max-width: 69%;
-    line-height: 46px;
+    max-width: 78%;
+    line-height: 29px;
   }
   .testimonial-container {
     display: flex;
@@ -321,14 +287,27 @@ h2 {
     align-items: center;
   }
 
+  #testimonials-img1 {
+    height: 16em;
+    width: 20em;
+    margin-bottom: -9px;
+    margin-top: 27px;
+  }
+
   #testimonials-img2 {
-    height: 15em;
-    width: 12em;
-    margin-top: 8em;
+    height: 22em;
+    width: 19em;
+    margin-top: -3em;
   }
   #testimonials-img3 {
-    height: 13em;
-    width: 8em;
+    height: 22em;
+    width: 13em;
     margin: 41px;
+  }
+
+  #header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
   }
 }

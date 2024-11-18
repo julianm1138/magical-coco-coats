@@ -1,26 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magical Coco Coats</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
   </head>
-  <body class="is-preload">
-    <div id="bg"></div>
-
+  <body>
     <div id="main">
-      <!-- Header -->
       <header id="header">
+        <div class="image-container" id="imageContainer">
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog1.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog2.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog3.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog4.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog5.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog6.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater1.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater2.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater3.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater4.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater5.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater6.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater7.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater8.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater9.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/sweater10.JPG')"
+          ></div>
+
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog1.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog2.JPG')"
+          ></div>
+          <div
+            class="bg-image"
+            style="background-image: url('/images/dog3.JPG')"
+          ></div>
+        </div>
+
         <h1>Magical Coco Coats</h1>
         <nav>
-          <!-- Pass the corresponding section id to the scrollToSection function -->
           <button onclick="scrollToSection('about')">About</button>
           <button onclick="scrollToSection('testimonials')">
             Testimonials
@@ -30,7 +106,7 @@
       </header>
 
       <section id="about">
-        <h2 class="section-header">Hi, I'm Mary</h2>
+        <h2>About Our Coats</h2>
         <p class="about-p">
           I make custom pet clothes for a perfect and comfortable fit. So your
           dog is 😀 & warm! I understand what it's like to have a dog with
@@ -44,45 +120,67 @@
           zippers, & ribbons. Each outfit is uniquely designed.
         </p>
       </section>
-
       <section id="testimonials">
-        <img
-          class="testimonal-img-1"
-          src="/assets/css/images/testimonialdog1.jpg"
-          alt="Pablo, the dog wearing his custom sweater"
-        />
-        <p class="testimonal-p">
-          "Pablo loves his hunting vest! It fits perfectly and the fleece lining
-          is smooth and soft. He prances when we put it on him. He also has a
-          lighter weight fleece coat for cool days. It is so easy to slip over
-          his head and velcro around his underside."
-        </p>
+        <div class="testimonial-container">
+          <h2>Testimonials</h2>
+          <img
+            id="testimonials-img1"
+            src="images\testimonialdog1.jpg"
+            alt="Image of
+        Pablo the dog with his custom sweater"
+          />
+          <p class="testimonials-p">
+            "Pablo loves his hunting vest! It fits perfectly and the fleece
+            lining is smooth and soft. He prances when we put it on him. He also
+            has a lighter weight fleece coat for cool days. It is so easy to
+            slip over his head and velcro around his underside."
+          </p>
+
+          <p id="testimonial-p-2" class="testimonials-p">
+            "My dog Zora absolutely loves her sweaters, they are custom sized
+            and fit her perfectly. They keep her warm and cozy in the cold
+            weather and are very stylish. I get tons of compliments from people
+            who see Zora in her sweaters while we are walking. I only get her
+            sweaters from here, because the quality is outstanding!" - Stephanie
+          </p>
+          <img
+            id="testimonials-img2"
+            src="images\testimonialdog2.jpg"
+            alt="Image of
+        two dogs wearing custom cheetah-design sweaters"
+          />
+
+          <p class="testimonials-p">
+            "These dog coats are beautiful! 🤩 They are hand made with such
+            beautiful craftsmanship and quality! I love them and my dogs
+            appreciate the fact that they even thought of the sleeves being made
+            with the dewy claws in mind so that they can easily slip into each
+            sleeve without having to worry about them getting caught! Thank you
+            🙏 so much for the beautiful work and design of them! 🙏🥰🙏🥰" -
+            Robyn
+          </p>
+
+          <img
+            id="testimonials-img3"
+            src="images\testimonialdog3.jpg"
+            alt="Image of
+        Chai the dog with his custom sweater"
+          />
+          <p class="testimonials-p" id="third-p">
+            "Just wanted to say that the costumes you made was so creative and
+            fit perfectly. Thank you for creating such a giggle for us! Also,
+            Chai loves his new sweater!" - Illya
+          </p>
+        </div>
       </section>
 
-      <section id="shop"></section>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <span class="copyright">
-          &copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-        </span>
-      </footer>
+      <section id="shop">
+        <h2>Order Your Custom Coat</h2>
+        <p>Discover the comfort and style your pet deserves...</p>
+      </section>
     </div>
 
     <script>
-      window.onload = function () {
-        document.body.classList.remove("is-preload");
-      };
-
-      window.ontouchmove = function () {
-        return false;
-      };
-
-      window.onorientationchange = function () {
-        document.body.scrollTop = 0;
-      };
-
-      // Scroll to the section based on the passed id
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
