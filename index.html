@@ -15,84 +15,68 @@
   <body>
     <div id="main">
       <header id="header">
-        <div class="image-container" id="imageContainer">
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog1.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog2.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog3.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog4.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog5.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog6.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater1.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater2.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater3.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater4.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater5.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater6.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater7.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater8.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater9.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/sweater10.JPG')"
-          ></div>
-
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog1.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog2.JPG')"
-          ></div>
-          <div
-            class="bg-image"
-            style="background-image: url('/images/dog3.JPG')"
-          ></div>
+        <div class="image-container">
+          <div class="marquee-content">
+            <img src="/images/dog1.JPG" alt="dog 1" class="image-item" />
+            <img src="/images/dog2.JPG" alt="dog 2" class="image-item" />
+            <img src="/images/dog3.JPG" alt="dog 3" class="image-item" />
+            <img src="/images/dog4.JPG" alt="dog 4" class="image-item" />
+            <img src="/images/dog5.JPG" alt="dog 5" class="image-item" />
+            <img src="/images/dog6.JPG" alt="dog 6" class="image-item" />
+            <img
+              src="/images/sweater1.JPG"
+              alt="sweater 1"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater2.JPG"
+              alt="sweater 2"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater3.JPG"
+              alt="sweater 3"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater4.JPG"
+              alt="sweater 4"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater5.JPG"
+              alt="sweater 5"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater6.JPG"
+              alt="sweater 6"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater7.JPG"
+              alt="sweater 7"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater8.JPG"
+              alt="sweater 8"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater9.JPG"
+              alt="sweater 9"
+              class="image-item"
+            />
+            <img
+              src="/images/sweater10.JPG"
+              alt="sweater 10"
+              class="image-item"
+            />
+            <img src="/images/dog1.JPG" alt="dog 1" class="image-item" />
+            <img src="/images/dog2.JPG" alt="dog 2" class="image-item" />
+            <img src="/images/dog3.JPG" alt="dog 3" class="image-item" />
+          </div>
         </div>
 
         <h1>Magical Coco Coats</h1>
@@ -176,9 +160,36 @@
 
       <section id="shop">
         <h2>Order Your Custom Coat</h2>
-        <p>Discover the comfort and style your pet deserves...</p>
-      </section>
-    </div>
+        <span>Please measure your dog and provide the measurements in the form below. We will be in touch with you through email.</span>
+        
+        <form id="dogSweaterForm" action="https://formspree.io/f/xwpkqwpp" method="POST">
+          <label for="neck">Neck to Beginning of Tail (in inches):</label>
+          <input type="number" id="neck" name="neck" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="neck-error"></div>
+        
+          <label for="belly">Around Belly (in inches):</label>
+          <input type="number" id="belly" name="belly" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="belly-error"></div>
+        
+          <label for="neckCircumference">Around Neck (in inches):</label>
+          <input type="number" id="neckCircumference" name="neckCircumference" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="neckCircumference-error"></div>
+        
+          <label for="frontLeg">Front Leg Length (in inches):</label>
+          <input type="number" id="frontLeg" name="frontLeg" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="frontLeg-error"></div>
+        
+          <label for="backLeg">Back Leg Length (in inches):</label>
+          <input type="number" id="backLeg" name="backLeg" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="backLeg-error"></div>
+        
+          <label for="underbelly">Underbelly Length (in inches):</label>
+          <input type="number" id="underbelly" name="underbelly" placeholder="please enter a number" step="0.01" required>
+          <div class="error-message" id="underbelly-error"></div>
+        
+          <input type="submit" value="Submit Measurements">
+        </form>
+        
 
     <script>
       function scrollToSection(sectionId) {
@@ -187,6 +198,29 @@
           section.scrollIntoView({ behavior: "smooth" });
         }
       }
+
+
+      // Assuming the form ID is "customSweaterForm" and the user is submitting it
+const form = document.getElementById("dogSweaterForm");
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Check if the user has already submitted the form this month
+  const submissionKey = 'formSubmittedThisMonth';
+  const now = new Date();
+  const lastSubmissionDate = new Date(sessionStorage.getItem(submissionKey));
+
+  if (lastSubmissionDate.getMonth() === now.getMonth() && lastSubmissionDate.getFullYear() === now.getFullYear()) {
+    alert("You've already submitted the form this month. Only one order per customer per month is allowed.");
+    return;
+  }
+
+  sessionStorage.setItem(submissionKey, now.toISOString());
+  
+  form.submit();
+});
+
     </script>
   </body>
 </html>
