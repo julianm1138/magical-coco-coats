@@ -222,6 +222,7 @@ section {
     padding-top: 2em;
     padding-bottom: 7em;
     font-size: 16px;
+    text-align: center;
     font-style: italic;
     max-width: 78%;
     line-height: 24px;
@@ -248,6 +249,10 @@ section {
 
   #header h1 {
     font-size: 31px;
+  }
+
+  #third-p {
+    margin-top: -2em;
   }
   span {
     max-width: 77%;
