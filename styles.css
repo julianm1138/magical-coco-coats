@@ -419,3 +419,60 @@ form#dogSweaterForm input[type="submit"]:hover {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #3b9eff;
 }
+
+/* Footer Styles */
+.footer {
+  background-color: #f9f9f9; /* Matches header background */
+  color: #fefefe; /* Light color for text */
+  padding: 3em 0;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Links */
+.footer a {
+  color: #3b9eff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #62c1e5; /* Light blue hover effect */
+}
+
+/* Footer Social Media Icons */
+.footer .social-icons {
+  margin: 1em 0;
+}
+
+.footer .social-icons a {
+  font-size: 24px;
+  color: #62c1e5;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #3b9eff; /* Light blue hover effect */
+}
+
+/* Footer Copyright */
+.footer .copyright {
+  margin-top: 2em;
+  font-size: 12px;
+}
+
+/* Small Screen Styling */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2em 0;
+  }
+
+  .footer .social-icons a {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+}
