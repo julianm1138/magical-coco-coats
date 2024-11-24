@@ -18,7 +18,7 @@ html {
 /* Header Styling */
 #header {
   position: relative;
-  height: 100vh;
+  height: 108vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@ button:focus {
 
 section {
   padding: 28px 20px;
-  min-height: 100vh;
+  min-height: 39 vh;
 }
 #about,
 #shop {
@@ -324,7 +324,44 @@ section {
   }
 }
 
-/* Form Container */
+/* Contact Section Styles */
+#contact {
+  width: 90%;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 23em;
+  margin: 1em auto;
+  margin-top: 0em;
+  margin-bottom: 13em;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+#contact a {
+  color: #1c96c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #3b9eff;
+}
+/* Form Styles */
 form#dogSweaterForm {
   width: 90%;
   max-width: 600px;
@@ -422,8 +459,8 @@ form#dogSweaterForm input[type="submit"]:hover {
 
 /* Footer Styles */
 .footer {
-  background-color: #f9f9f9; /* Matches header background */
-  color: #fefefe; /* Light color for text */
+  background-color: #f9f9f9;
+  color: #fefefe;
   padding: 3em 0;
   text-align: center;
   font-size: 14px;
@@ -440,7 +477,7 @@ form#dogSweaterForm input[type="submit"]:hover {
 }
 
 .footer a:hover {
-  color: #62c1e5; /* Light blue hover effect */
+  color: #62c1e5;
 }
 
 /* Footer Social Media Icons */
@@ -456,10 +493,9 @@ form#dogSweaterForm input[type="submit"]:hover {
 }
 
 .footer .social-icons a:hover {
-  color: #3b9eff; /* Light blue hover effect */
+  color: #3b9eff;
 }
 
-/* Footer Copyright */
 .footer .copyright {
   margin-top: 2em;
   font-size: 12px;
