@@ -160,7 +160,7 @@
       </section>
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>For any order or non-related order inquiries, please email us at<a href="mailto:magicalcococoats@gmail.com"> magicalcococoats@gmail.com</a>.</p>
+        <p>For any order or non-related order inquiries, please email us at<a href="mailto:magicalcococoats@gmail.com"> magicalcococoats@gmail.com</a></p>
       </section>
       
       <section id="shop">
@@ -210,11 +210,13 @@
             </a>
           </div>
         </footer>
-        
+        <div id="back-to-top" onclick="scrollToSection('header')" class="sticky">Back to Top</div>
+
         
         
 
     <script>
+    
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -251,6 +253,26 @@ form.addEventListener('submit', function(event) {
   sessionStorage.setItem(submissionKey, now.toISOString());
 
   form.submit();
+
+
+  
+});
+
+
+const backToTop = document.getElementById('back-to-top');
+const header = document.getElementById('header');
+
+
+window.addEventListener('scroll', function() {
+    // Get the height of the header 
+    const headerHeight = header.offsetHeight;
+
+    // Check the user's scroll position
+    if (window.scrollY > headerHeight) {
+        backToTop.style.display = 'block'; 
+    } else {
+        backToTop.style.display = 'none'; 
+    }
 });
 
     </script>

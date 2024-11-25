@@ -322,6 +322,17 @@ section {
     max-width: 33%;
     margin-bottom: 2em;
   }
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 2em;
+    background-color: #62c1e5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
 }
 
 /* Contact Section Styles */
@@ -510,5 +521,18 @@ form#dogSweaterForm input[type="submit"]:hover {
   .footer .social-icons a {
     font-size: 20px;
     margin: 0 8px;
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 7px;
+    left: 1em;
+    background-color: #62c1e5;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1000;
   }
 }
