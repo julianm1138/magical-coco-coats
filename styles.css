@@ -252,12 +252,13 @@ section {
     height: 18em;
     width: 10em;
     margin: 41px;
+    margin-top: -3em;
   }
   #testimonials-img4 {
-    height: 27em;
-    width: 37em;
+    height: 14em;
+    width: 18em;
     margin-bottom: -9px;
-    margin-top: -70px;
+    margin-top: -54px;
   }
 
   #header h1 {
@@ -265,7 +266,10 @@ section {
   }
 
   #third-p {
-    margin-top: -2em;
+    margin-top: -8px;
+  }
+  #fourth-p {
+    margin-top: -3em;
   }
   span {
     max-width: 77%;
