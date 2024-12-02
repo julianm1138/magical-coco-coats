@@ -253,6 +253,12 @@ section {
     width: 10em;
     margin: 41px;
   }
+  #testimonials-img4 {
+    height: 27em;
+    width: 37em;
+    margin-bottom: -9px;
+    margin-top: -70px;
+  }
 
   #header h1 {
     font-size: 31px;
@@ -319,6 +325,14 @@ section {
     height: 30em;
     width: 18em;
     margin: 41px;
+    margin-top: -4em;
+  }
+
+  #testimonials-img4 {
+    height: 27em;
+    width: 37em;
+    margin-bottom: -9px;
+    margin-top: -70px;
   }
 
   #testimonial-p-2 {
